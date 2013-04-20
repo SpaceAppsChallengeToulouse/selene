@@ -27,7 +27,6 @@ public class SlickInterface extends BasicGame{
 	public SlickInterface(IGameEngine engine, Hashtable<String, ICommand> commands) {
 		super("Selene The Game !");
 		this.engine = engine;
-		
 		// TODO Auto-generated constructor stub
 	}
 
