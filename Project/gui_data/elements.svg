@@ -14,7 +14,10 @@
    id="svg5509"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="Nouveau document 19">
+   sodipodi:docname="elements.svg"
+   inkscape:export-filename="/home/jtmasse/git/selene/Project/gui_data/elements.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs5511" />
   <sodipodi:namedview
@@ -26,7 +29,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="64.875683"
-     inkscape:cy="391.28743"
+     inkscape:cy="290.27218"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -414,7 +417,10 @@
        width="64"
        height="64"
        x="0"
-       y="796.36218" />
+       y="796.36218"
+       inkscape:export-filename="/home/jtmasse/git/selene/Project/gui_data/panneauxsolaires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="fill:#aeaeae;fill-opacity:1;stroke:#645e46;stroke-width:1.12345934;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect6102"
