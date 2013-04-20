@@ -1,17 +1,18 @@
-Description : DANEEL
-Fonction : coordination, exploitation des données
-Récupère les diverses données transmises par HUGIN et MUNIN, les mets en relation et les utilise pour dégager une série de conseils/décisions potentielles
-Processeur puissant, faible mobilité, grande capacité de communication à distance
+Description : DANEEL
+Fonction : coordination, exploitation des donnÃ©es
+RÃ©cupÃ¨re les diverses donnÃ©es transmises par HUGIN et MUNIN, les mets en relation et les utilise pour dÃ©gager une sÃ©rie de conseils/dÃ©cisions potentielles
+Processeur puissant, faible mobilitÃ©, grande capacitÃ© de communication Ã  distance
 
-Description : HUGIN, MUNIN (grande ressemblance avec Curiosity)
-Fonction : exploration, reconnaissance, prélèvement et traitement d’échantillon
-Se déplace en analysant l’environnement autour de lui (scanner, caméras), localise les zones d’intérêt, récupère un échantillon, l’analyse et envoie les résultats à DANEEL
-Grande mobilité, scanner développé, laboratoire ambulant
+Description : HUGIN, MUNIN (grande ressemblance avec Curiosity)
+Fonction : exploration, reconnaissance, prÃ©lÃ¨vement et traitement d'Ã©chantillon
+Se dÃ©place en analysant l'environnement autour de lui,repÃ¨re les zones intÃ©ressantes, rÃ©cupÃ¨re un Ã©chantillon, l'analyse et envoie les rÃ©sultats Ã  DANEEL
+Grande mobilitÃ©, scanner dÃ©veloppÃ©, laboratoire ambulant
+Hugin fait les analyses, Munin prÃ©lÃ¨ve et stocke les Ã©chantillons pour les ramener Ã  la base
 
-Description : DOC
-Fonction : main d’œuvre de précision
-Peut intervenir pour les travaux de grande précision ; réparation, etc…
+Description : DOC
+Fonction : main d'oeuvre de prÃ©cision
+Peut intervenir pour les travaux de grande prÃ©cision ; rÃ©paration, etc...
 
-Description : AM, STRAM, GRAM
-Fonction : transport, excavation, 
-AM peut transporter de lourdes charges, STRAM est creuseur et GRAM est bâtisseur
+Description : AM, STRAM, GRAM
+Fonction : transport, excavation, construction
+AM peut transporter de lourdes charges, STRAM est creuseur et GRAM est bÃ¢tisseur
