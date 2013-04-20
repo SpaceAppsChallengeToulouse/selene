@@ -3,17 +3,17 @@ CAPACITES DES ROBOTS
 
 - Communication (DANEEL)
 
-- Traitement des données (DANEEL)
+- Traitement des donnÃ©es (DANEEL)
 
 - Portage (AM)
 
 - Excavation (STRAM)
 
-- Réparation (DOC)
+- Rï¿½paration (DOC)
 
 - Construction (GRAM)
 
 - Science (HUGIN)
 
-- Stockage (Munin)
+- Stockage (MUNIN)
 
