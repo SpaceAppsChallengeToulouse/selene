@@ -19,7 +19,7 @@ public class Launcher {
 		IGameEngine engine = new GameEngine();
 		SlickInterface slick = new SlickInterface(engine, cmd);
 		AppGameContainer app;
-		TileTest tiletest = new TileTest();
+		//TileTest tiletest = new TileTest();
 
 		try {
 			app = new AppGameContainer(slick);
