@@ -1,17 +1,18 @@
-Description : DANEEL
-Fonction : coordination, exploitation des données
-Récupère les diverses données transmises par HUGIN et MUNIN, les mets en relation et les utilise pour dégager une série de conseils/décisions potentielles
-Processeur puissant, faible mobilité, grande capacité de communication à distance
+Descriptionï¿½: DANEEL
+Fonctionï¿½: coordination, exploitation des donnï¿½es
+Rï¿½cupï¿½re les diverses donnï¿½es transmises par HUGIN et MUNIN, les mets en relation et les utilise pour dï¿½gager une sï¿½rie de conseils/dï¿½cisions potentielles
+Processeur puissant, faible mobilitï¿½, grande capacitï¿½ de communication ï¿½ distance
 
-Description : HUGIN, MUNIN (grande ressemblance avec Curiosity)
-Fonction : exploration, reconnaissance, prélèvement et traitement d’échantillon
-Se déplace en analysant l’environnement autour de lui (scanner, caméras), localise les zones d’intérêt, récupère un échantillon, l’analyse et envoie les résultats à DANEEL
-Grande mobilité, scanner développé, laboratoire ambulant
+Descriptionï¿½: HUGIN, MUNIN (grande ressemblance avec Curiosity)
+Fonctionï¿½: exploration, reconnaissance, prï¿½lï¿½vement et traitement dï¿½ï¿½chantillon
+Se dï¿½place en analysant lï¿½environnement autour de lui (scanner, camï¿½ras), localise les zones dï¿½intï¿½rï¿½t, rï¿½cupï¿½re un ï¿½chantillon, lï¿½analyse et envoie les rï¿½sultats ï¿½ DANEEL
+Grande mobilitï¿½, scanner dï¿½veloppï¿½, laboratoire ambulant
+Hugin fait les analyses, Munin prÃ©lÃ¨ve et stocke les Ã©chantillons
 
-Description : DOC
-Fonction : main d’œuvre de précision
-Peut intervenir pour les travaux de grande précision ; réparation, etc…
+Descriptionï¿½: DOC
+Fonctionï¿½: main dï¿½ï¿½uvre de prï¿½cision
+Peut intervenir pour les travaux de grande prï¿½cisionï¿½; rï¿½paration, etcï¿½
 
-Description : AM, STRAM, GRAM
-Fonction : transport, excavation, 
-AM peut transporter de lourdes charges, STRAM est creuseur et GRAM est bâtisseur
+Descriptionï¿½: AM, STRAM, GRAM
+Fonctionï¿½: transport, excavation, construction
+AM peut transporter de lourdes charges, STRAM est creuseur et GRAM est bï¿½tisseur
