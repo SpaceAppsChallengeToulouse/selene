@@ -1,6 +1,7 @@
 package selene.test;
 
 import org.newdawn.slick.*;
+import org.newdawn.slick.gui.TextField;
 import org.newdawn.slick.tiled.TiledMap;
 
 public class TileTest {
@@ -13,9 +14,16 @@ public class TileTest {
 		double bigX=-1, bigY=-1;
 		private int mouseX, mouseY;
 		private boolean mouseDown = false;
+		Image elementsDeJeu;
+		int elementX=0, elementY=0;
+		boolean keyDown = false;
 
 		public IsometricTestGame(String title) {
 			super(title);
+		}
+		
+		void drawSubImage(Graphics g, Image img, float x, float y, float width, float height, float srcX, float srcY){
+			g.drawImage(img, x, y, x+width, y+height, srcX, srcY, srcX+width, srcY+height);
 		}
 
 		@Override
@@ -23,14 +31,20 @@ public class TileTest {
 				throws SlickException {
 			map.render(renderX, renderY);
 			arg0.getGraphics().drawString("["+tileX+","+tileY+"]", 10, 50);
+			//TODO: GET THIS OUT AS tileCoords -> render coords
+			drawSubImage(arg1, elementsDeJeu, 
+					(float)(bigX=renderX + elementX * map.getTileWidth() / 2 - elementY * map.getTileWidth() / 2),
+					(float)(bigY=renderY + elementY * map.getTileHeight() /2 + elementX * map.getTileHeight() /2 - map.getTileHeight()) ,
+					64, 64, 0, 0);
+			//END TODO.
 			arg0.getGraphics().drawString("["+bigX+","+bigY+"]", 10, 70);
 			arg0.getGraphics().drawString("["+mouseX+","+mouseY+"]", 10, 90);
-			
 		}
 
 		@Override
 		public void init(GameContainer arg0) throws SlickException {
 			map = new TiledMap("test_data/map1.tmx");
+			elementsDeJeu = new Image("gui_data/elements.png");
 		}
 		
 		private void calculateTileXY(int mouseX, int mouseY){
@@ -49,7 +63,8 @@ public class TileTest {
 					mouseX = input.getAbsoluteMouseX();
 					mouseY = input.getAbsoluteMouseY();
 					calculateTileXY(mouseX, mouseY);
-					
+					elementX = tileX;
+					elementY = tileY;
 				}
 				renderX -= mouseX - input.getAbsoluteMouseX();
 				renderY -= mouseY - input.getAbsoluteMouseY();
@@ -58,6 +73,50 @@ public class TileTest {
 			} else {
 				if(mouseDown){
 					mouseDown = false;
+				}
+			}
+			if(keyDown){
+				if(input.isKeyDown(Input.KEY_NUMPAD8)){
+					elementX -= 1;
+					elementY -= 1;
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD2)){
+					elementX += 1;
+					elementY += 1;
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD4)){
+					elementX += 1;
+					elementY -= 1;
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD6)){
+					elementX -= 1;
+					elementY += 1;
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD7)){
+					elementX -= 1; 
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD3)){
+					elementX += 1; 
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD9)){
+					elementY -= 1; 
+					keyDown = true;
+				} else if(input.isKeyDown(Input.KEY_NUMPAD1)){
+					elementY += 1; 
+					keyDown = true;
+				}
+			} else {
+				if(!input.isKeyDown(Input.KEY_NUMPAD1)&&
+						!input.isKeyDown(Input.KEY_NUMPAD2)&&
+						!input.isKeyDown(Input.KEY_NUMPAD3)&&
+						!input.isKeyDown(Input.KEY_NUMPAD4)&&
+						!input.isKeyDown(Input.KEY_NUMPAD5)&&
+						!input.isKeyDown(Input.KEY_NUMPAD6)&&
+						!input.isKeyDown(Input.KEY_NUMPAD7)&&
+						!input.isKeyDown(Input.KEY_NUMPAD8)&&
+						!input.isKeyDown(Input.KEY_NUMPAD9)
+						){
+					keyDown = false;
 				}
 			}
 		}
