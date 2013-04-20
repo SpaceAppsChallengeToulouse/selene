@@ -6,7 +6,6 @@ public class Map {
 	
 	public Map(int height, int width) {
 		this.map = new Case[height][width];
-		
 	}
 
 }
