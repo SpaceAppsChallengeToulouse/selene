@@ -9,7 +9,7 @@ CAPACITES DES ROBOTS
 
 - Excavation (STRAM)
 
-- R�paration (DOC)
+- Réparation (DOC)
 
 - Construction (GRAM)
 
