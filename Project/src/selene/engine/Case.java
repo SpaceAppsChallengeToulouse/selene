@@ -14,4 +14,8 @@ public class Case {
 		this.posY = y;
 		this.state = CaseEmpty.getInstance();
 	}
+	
+	public CaseState getState(){
+		return this.state;
+	}
 }

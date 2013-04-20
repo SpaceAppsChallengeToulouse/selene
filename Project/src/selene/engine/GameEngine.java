@@ -21,4 +21,15 @@ public class GameEngine implements IGameEngine {
 	public void addObserver(Observer o) {
 		this.obs.addObserver(o);
 	}
+
+	@Override
+	public void init(int mapSize) {
+		this.map = new Map(mapSize, mapSize);
+		
+	}
+
+	@Override
+	public Map getMap() {
+		return this.map;
+	}
 }
