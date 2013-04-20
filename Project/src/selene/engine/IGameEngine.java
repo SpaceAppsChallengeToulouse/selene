@@ -1,5 +1,7 @@
 package selene.engine;
 
-public interface IGameEngine {
+import java.util.Observer;
 
+public interface IGameEngine {
+	public void addObserver(Observer o);
 }
