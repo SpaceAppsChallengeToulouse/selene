@@ -7,7 +7,7 @@ Description : HUGIN, MUNIN (grande ressemblance avec Curiosity)
 Fonction : exploration, reconnaissance, prélèvement et traitement d'échantillon
 Se déplace en analysant l'environnement autour de lui,repère les zones intéressantes, récupère un échantillon, l'analyse et envoie les résultats à DANEEL
 Grande mobilité, scanner développé, laboratoire ambulant
-Hugin fait les analyses, Munin prélève et stocke les échantillons
+Hugin fait les analyses, Munin prélève et stocke les échantillons pour les ramener à la base
 
 Description : DOC
 Fonction : main d'oeuvre de précision
