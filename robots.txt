@@ -1,18 +1,18 @@
-Description�: DANEEL
-Fonction�: coordination, exploitation des donn�es
-R�cup�re les diverses donn�es transmises par HUGIN et MUNIN, les mets en relation et les utilise pour d�gager une s�rie de conseils/d�cisions potentielles
-Processeur puissant, faible mobilit�, grande capacit� de communication � distance
+Description : DANEEL
+Fonction : coordination, exploitation des données
+Récupère les diverses données transmises par HUGIN et MUNIN, les mets en relation et les utilise pour dégager une série de conseils/décisions potentielles
+Processeur puissant, faible mobilité, grande capacité de communication à distance
 
-Description�: HUGIN, MUNIN (grande ressemblance avec Curiosity)
-Fonction�: exploration, reconnaissance, pr�l�vement et traitement d��chantillon
-Se d�place en analysant l�environnement autour de lui (scanner, cam�ras), localise les zones d�int�r�t, r�cup�re un �chantillon, l�analyse et envoie les r�sultats � DANEEL
-Grande mobilit�, scanner d�velopp�, laboratoire ambulant
+Description : HUGIN, MUNIN (grande ressemblance avec Curiosity)
+Fonction : exploration, reconnaissance, prélèvement et traitement d'échantillon
+Se déplace en analysant l'environnement autour de lui,repère les zones intéressantes, récupère un échantillon, l'analyse et envoie les résultats à DANEEL
+Grande mobilité, scanner développé, laboratoire ambulant
 Hugin fait les analyses, Munin prélève et stocke les échantillons
 
-Description�: DOC
-Fonction�: main d��uvre de pr�cision
-Peut intervenir pour les travaux de grande pr�cision�; r�paration, etc�
+Description : DOC
+Fonction : main d'oeuvre de précision
+Peut intervenir pour les travaux de grande précision ; réparation, etc...
 
-Description�: AM, STRAM, GRAM
-Fonction�: transport, excavation, construction
-AM peut transporter de lourdes charges, STRAM est creuseur et GRAM est b�tisseur
+Description : AM, STRAM, GRAM
+Fonction : transport, excavation, construction
+AM peut transporter de lourdes charges, STRAM est creuseur et GRAM est bâtisseur
