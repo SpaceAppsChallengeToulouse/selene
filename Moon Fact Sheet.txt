@@ -1,0 +1,72 @@
+Moon Fact Sheet
+
+ 
+Moon/Earth Comparison
+
+Bulk parameters
+
+                                   Moon         Earth      Ratio (Moon/Earth)
+Mass (1024 kg)                    0.07349       5.9736     0.0123    
+Volume (1010 km3)                 2.1958      108.321      0.0203
+Equatorial radius (km)	           1738.1        6378.1    0.2725      
+Polar radius (km)                  1736.0        6356.8    0.2731
+Volumetric mean radius (km)        1737.1        6371.0    0.2727
+Ellipticity (Flattening)          0.0012        0.00335    0.36    
+Mean density (kg/m3)               3350          5515      0.607      
+Surface gravity (m/s2)            1.62          9.80       0.165    
+Surface acceleration (m/s2)       1.62          9.78       0.166    
+Escape velocity (km/s)            2.38         11.2        0.213    
+GM (x 106 km3/s2)                 0.0049        0.3986     0.0123 
+Bond albedo                       0.11          0.306      0.360
+Visual geometric albedo           0.12          0.367      0.330    
+Visual magnitude V(1,0)          +0.21         -3.86          -
+Solar irradiance (W/m2)            1367.6        1367.6    1.000      
+Black-body temperature (K)          270.7         254.3    1.064      
+Topographic range (km)               16            20      0.800      
+Moment of inertia (I/MR2)         0.394         0.3308     1.191
+J2 (x 10-6)                     202.7        1082.63        0.187  
+Orbital parameters (for orbit about the Earth)
+
+                                    Moon         
+Semimajor axis (106 km)             0.3844                 
+Perigee (106 km)*                   0.3633
+Apogee (106 km)*                    0.4055
+Revolution period (days)           27.3217            
+Synodic period (days)              29.53               
+Mean orbital velocity (km/s)        1.023                  
+Max. orbital velocity (km/s)        1.076
+Min. orbital velocity (km/s)        0.964
+Inclination to ecliptic (deg)       5.145
+Inclination to equator (deg)       18.28 - 28.58                    
+Orbit eccentricity                  0.0549              
+Sidereal rotation period (hrs)    655.728                
+Obliquity to orbit (deg)            6.68                   
+Recession rate from Earth (cm/yr)   3.8
+
+Mean values at opposition from Earth
+        Distance from Earth (equator, km)   378,000    
+        Apparent diameter (seconds of arc)     1896
+        Apparent visual magnitude               -12.74     
+
+* These represent mean apogee and perigee for the lunar orbit.  
+The orbit changes over the course of the year so the distance 
+from the Moon to Earth roughly ranges from 357,000 km to 407,000 km. 
+Lunar Atmosphere
+
+Diurnal temperature range: >100 K to <400 K  (roughly -250 F to +250 F)
+Total mass of atmosphere:  ~25,000 kg
+Surface pressure (night): 3 x 10-15 bar  (2 x 10-12 torr)
+Abundance at surface: 2 x 105 particles/cm3
+
+Estimated Composition (particles per cubic cm):
+    Helium 4 (4He) - 40,000 ; Neon 20 (20Ne) - 40,000 ; Hydrogen (H2) - 35,000
+    Argon 40 (40Ar) - 30,000 ; Neon 22 (22Ne) - 5,000 ; Argon 36 (36Ar) - 2,000 
+    Methane - 1000 ; Ammonia - 1000 ; Carbon Dioxide (CO2) - 1000 
+    Trace Oxygen (O+), Aluminum (Al+), Silicon (Si+) 
+    Possible Phosphorus (P+), Sodium (Na+), Magnesium (Mg+)
+
+Composition of the tenuous lunar atmosphere is poorly known and variable, 
+these are estimates of the upper limits of the nighttime ambient atmosphere 
+composition.  Daytime levels were difficult to measure due to heating and 
+outgassing of Apollo surface experiments.
+For information on the Earth, see the Earth Fact Sheet.
