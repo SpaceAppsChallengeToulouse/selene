@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="52cm" height="47cm" viewBox="-201 -313 1027 926" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="117.379" y="-311.754" width="271.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="117.379" y="-311.754" width="271.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="253.279" y="-292.754">IEntity</text>
+    <rect style="fill: #ffffff" x="117.379" y="-283.754" width="271.8" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="117.379" y="-283.754" width="271.8" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-269.754">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-253.754">#positionX: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-237.754">#positionY: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-221.754">#energyConsumption: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-205.754">#resourcesCosts: ArrayList&lt;Double&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-189.754">#partsCosts: ArrayList&lt;Double&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-173.754">#robotworkCost: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="120.379" y="-157.754">#usuryLevel: double</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="80" y="-40" width="94.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80" y="-40" width="94.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="127.35" y="-21">Building</text>
+    <rect style="fill: #ffffff" x="80" y="-12" width="94.7" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80" y="-12" width="94.7" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83" y="2">#sizeX: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83" y="18">#sizeY: int</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="253.279,-132.508 253.279,-87.8761 127.35,-87.8761 127.35,-41.0081 "/>
+    <polygon style="fill: #ffffff" points="261.279,-132.508 253.279,-148.508 245.279,-132.508 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.279,-132.508 253.279,-148.508 245.279,-132.508 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-200" y="200" width="287.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-200" y="200" width="287.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-56.4" y="219">Factory</text>
+    <rect style="fill: #ffffff" x="-200" y="228" width="287.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-200" y="228" width="287.2" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-197" y="242">#changeProductionTime: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-197" y="258">#productibleParts: ArrayList&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-197" y="274">#productionTimes: ArrayList&lt;Double&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="600" y="200" width="120.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="600" y="200" width="120.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="660.05" y="219">EnergyPlant</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="127.35,42.2361 127.35,160 660.05,160 660.05,199.01 "/>
+    <polygon style="fill: #ffffff" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="127.35,42.2361 127.35,160 -56.4,160 -56.4,199.023 "/>
+    <polygon style="fill: #ffffff" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="160" y="200" width="371.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="160" y="200" width="371.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="345.95" y="219">Mine</text>
+    <rect style="fill: #ffffff" x="160" y="228" width="371.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="160" y="228" width="371.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="163" y="242">#extractedResources: ArrayList&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="163" y="258">#extractionRate: ArrayList&lt;Double&gt;</text>
+    <rect style="fill: #ffffff" x="160" y="264" width="371.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="160" y="264" width="371.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="163" y="278">+addExtractedRessource(in ressourceName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="163" y="294">                       in value:double): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="127.35,42.2361 127.35,160 345.95,160 345.95,198.996 "/>
+    <polygon style="fill: #ffffff" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-40" y="440" width="333.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40" y="440" width="333.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="126.7" y="459">Refinery</text>
+    <rect style="fill: #ffffff" x="-40" y="468" width="333.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40" y="468" width="333.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="482">#inputResources: ArrayList&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="498">#outputResources: ArrayList&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="514">#inputRatio: ArrayList&lt;Double&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="530">#outputRatio: ArrayList&lt;Double&gt;</text>
+    <rect style="fill: #ffffff" x="-40" y="536" width="333.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40" y="536" width="333.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="550">+addInputResource(in ressourceName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="566">                  in value:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="582">+addOutputResource(in resourceName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37" y="598">                   in value:double): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="127.35,42.2361 127.35,160 126.7,160 126.7,439.001 "/>
+    <polygon style="fill: #ffffff" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-120" y="360" width="170.05" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-120" y="360" width="170.05" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-34.975" y="379">ReparationCenter</text>
+    <rect style="fill: #ffffff" x="-120" y="388" width="170.05" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-120" y="388" width="170.05" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-117" y="402">#repairRate: double</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="127.35,42.2361 127.35,320 -34.975,320 -34.975,358.992 "/>
+    <polygon style="fill: #ffffff" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="280" y="-40" width="294.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="280" y="-40" width="294.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="427.45" y="-21">Robot</text>
+    <rect style="fill: #ffffff" x="280" y="-12" width="294.9" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="280" y="-12" width="294.9" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="2">#velocity: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="18">#velocityMax: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="34">#range: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="50">#energyLevel: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="66">#energyLevelMax: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="82">#currentOccupation: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="98">#capabilities: ArrayList&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="114">#levelsOfExpertise: ArrayList&lt;Double&gt;</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="253.279,-132.508 253.279,-87.877 427.45,-87.877 427.45,-41.0099 "/>
+    <polygon style="fill: #ffffff" points="261.279,-132.508 253.279,-148.508 245.279,-132.508 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.279,-132.508 253.279,-148.508 245.279,-132.508 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="360" y="400" width="464.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="360" y="400" width="464.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="592.15" y="419">StorageArea</text>
+    <rect style="fill: #ffffff" x="360" y="428" width="464.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="360" y="428" width="464.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="442">#storedResources: ArrayList&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="458">#storageCapabilities: ArrayList&lt;Double&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="474">#usedSpaces: ArrayList&lt;Double&gt;</text>
+    <rect style="fill: #ffffff" x="360" y="480" width="464.3" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="360" y="480" width="464.3" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="494">+getStorageCapability(in ressourceName:String): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="510">+setStorageCapability(in resourceName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="526">                      in value:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="542">+getUsedSpace(in resourceName:String): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="558">+setUsedSpace(in resourceName:String,in value:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="574">+addStoredResource(in resourceName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="590">                   in storageCapability:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="363" y="606">                   in usedSpace:double=0.0): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="127.35,42.2361 127.35,360 592.15,360 592.15,400 "/>
+    <polygon style="fill: #ffffff" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="135.35,42.2361 127.35,26.2361 119.35,42.2361 "/>
+  </g>
+</svg>
