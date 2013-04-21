@@ -51,11 +51,11 @@ public class Launcher {
 				robot = new Robot("Truck", 8, 10, 0, new ArrayList<Double>(), new ArrayList<Double>(), 10, 0.0, 1.0, 1.1, 500, 1.0, 1.0, new String(), new ArrayList<String>(), new ArrayList<Double>()),
 				robot2 = new Robot("Truck2", 12, 11, 0, new ArrayList<Double>(), new ArrayList<Double>(), 10, 0.0, 1.0, 1.1, 500, 1.0, 1.0, new String(), new ArrayList<String>(), new ArrayList<Double>()),
 				solarPanel = new Building("Solar", 8,12,0.0, new ArrayList<Double>(), new ArrayList<Double>(), 0.0, 0.0, 1, 1);
-		fusee.setupRender("gui_data/elements.png", 0, 0, 64, 64);
-		robot.setupRender("gui_data/elements.png", 0, 64,64, 64);
-		robot2.setupRender("gui_data/elements.png", 0, 64,64, 64);
-		comm.setupRender("gui_data/elements.png", 0, 128,64, 64);
-		solarPanel.setupRender("gui_data/elements.png", 0, 192, 64, 64);
+		fusee.setupRender("gui_data/elements.png", 0, 0, 64,64);
+		robot.setupRender("gui_data/elements.png", 0, 64,64,64);
+		robot2.setupRender("gui_data/elements.png",0, 64,64,64);
+		comm.setupRender("gui_data/elements.png",  0,128,64,64);
+		solarPanel.setupRender("gui_data/elements.png",0,192,64,64);
 		
 		engine.addEntity(fusee);
 		engine.addEntity(robot);

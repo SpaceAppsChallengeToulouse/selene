@@ -18,4 +18,9 @@ public interface IGameEngine {
 	void setRenderX(float value);
 	float getRenderY();
 	void setRenderY(float value);
+	
+	public void setAdding(IEntity ent);
+	public void placeEntity();
+	public void setMouseX(int mouseX);
+	public void setMouseY(int mouseY);
 }
