@@ -11,6 +11,7 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.tiled.TiledMap;
 
 import selene.command.ICommand;
+import selene.engine.GameEngine;
 import selene.engine.IGameEngine;
 
 public class SlickInterface extends BasicGame{
@@ -57,34 +58,6 @@ public class SlickInterface extends BasicGame{
 		for(int i = 0 ; i < 4 ; ++i){
 			this.image.draw(144+(i)*128, 480, 144+(i+1)*128, 608, 0, (i)*128, 128, (i+1)*128);
 		}
-//		this.image.draw(144+0*100, 500, 144+1*100,600, 0, 0*128, 128, 1*128);
-//		this.image.draw(144+1*100, 500, 144+2*100,600, 0, 1*128, 128, 2*128);
-//		this.image.draw(144+2*100, 500, 144+3*100,600, 0, 2*128, 128, 3*128);
-//		this.image.draw(144+3*100, 500, 144+4*100,600, 0, 3*128, 128, 4*128);
-//		
-//		//TODO: GET THIS OUT AS tileCoords -> render coords
-//		drawSubImage(arg1, elementsDeJeu, 
-//				(float)(bigX=renderX + 1 * map.getTileWidth() / 2 - 1 * map.getTileWidth() / 2),
-//				(float)(bigY=renderY + 1 * map.getTileHeight() /2 + 1 * map.getTileHeight() /2 - map.getTileHeight()) ,
-//				64, 64, 0, 0);
-//		
-//		drawSubImage(arg1, elementsDeJeu, 
-//				(float)(bigX=renderX + 10 * map.getTileWidth() / 2 - 7 * map.getTileWidth() / 2),
-//				(float)(bigY=renderY + 7 * map.getTileHeight() /2 + 10 * map.getTileHeight() /2 - map.getTileHeight()) ,
-//				64, 64, 0, 0);
-//		drawSubImage(arg1, elementsDeJeu, 
-//				(float)(bigX=renderX + 5 * map.getTileWidth() / 2 - 3 * map.getTileWidth() / 2),
-//				(float)(bigY=renderY + 3 * map.getTileHeight() /2 + 5 * map.getTileHeight() /2 - map.getTileHeight()) ,
-//				64, 64, 0, 0);
-//		drawSubImage(arg1, elementsDeJeu, 
-//				(float)(bigX=renderX + 1 * map.getTileWidth() / 2 - 6 * map.getTileWidth() / 2),
-//				(float)(bigY=renderY + 6 * map.getTileHeight() /2 + 1 * map.getTileHeight() /2 - map.getTileHeight()) ,
-//				128, 128, 0, 0);
-//		drawSubImage(arg1, elementsDeJeu, 
-//				(float)(bigX=renderX + 12 * map.getTileWidth() / 2 - 4 * map.getTileWidth() / 2),
-//				(float)(bigY=renderY + 4 * map.getTileHeight() /2 + 12 * map.getTileHeight() /2 - map.getTileHeight()) ,
-//				256, 256, 0, 0);
-//		//END TODO.
 	}
 	
 	public void drawSubImage(Graphics g, Image img, float x, float y, float width, float height, float srcX, float srcY){
@@ -115,18 +88,21 @@ public class SlickInterface extends BasicGame{
 	@Override
 	public void update(GameContainer arg0, int arg1) throws SlickException {
 		Input input = arg0.getInput();
+		engine.setMouseX(input.getAbsoluteMouseX());
+		engine.setMouseY(input.getAbsoluteMouseY());
 		if( input.isMouseButtonDown(Input.MOUSE_LEFT_BUTTON)){
 			if(!mouseDown){
 				mouseDown = true;
 				mouseX = input.getAbsoluteMouseX();
 				mouseY = input.getAbsoluteMouseY();
 				if(mapI[mouseY][mouseX] == 1){
-					PopUp p = new PopUp();
+					@SuppressWarnings("unused")
+					PopUp p = new PopUp(engine);
+				} else {
+					engine.placeEntity();
 				}
 				System.out.println(this.mapI[mouseY][mouseX]);
 				calculateTileXY(mouseX, mouseY);
-//				elementX = tileX;
-//				elementY = tileY;
 			}
 			renderX -= mouseX - input.getAbsoluteMouseX();
 			renderY -= mouseY - input.getAbsoluteMouseY();
@@ -139,7 +115,6 @@ public class SlickInterface extends BasicGame{
 				mouseDown = false;
 			}
 		}
-		
 	}
 	
 	public void printMap(){
