@@ -3,6 +3,7 @@ package selene.frame;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
 import javax.swing.BoxLayout;
@@ -26,9 +27,11 @@ public class PopUp extends JFrame implements ActionListener{
 	static class RocketAdder implements ActionListener{
 		
 		IGameEngine engine;
+		PopUp popup;
 		
-		public RocketAdder(IGameEngine engine){
+		public RocketAdder(IGameEngine engine, PopUp popUp){
 			this.engine = engine;
+			popup = popUp;
 		}
 
 		static int counter = 1;
@@ -45,6 +48,7 @@ public class PopUp extends JFrame implements ActionListener{
 			newFusee.setupRender(new String(), 0, 0, 64, 64);
 			newFusee.setImage(elements);
 			engine.setAdding(newFusee);
+			Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(new WindowEvent(popup, WindowEvent.WINDOW_CLOSING));
 		}
 		
 	};
@@ -53,7 +57,7 @@ public class PopUp extends JFrame implements ActionListener{
 	
 	public PopUp(IGameEngine engine){
 		super("PopUp !");
-		rocketAdder = new RocketAdder(engine);
+		rocketAdder = new RocketAdder(engine, this);
 		this.panel = new JPanel();
 		this.panel.setLayout(new BoxLayout(this.panel, BoxLayout.PAGE_AXIS));
 		
