@@ -11,7 +11,7 @@ public class Robot extends IEntity {
 	protected double energyLevel;
 	protected double energyLevelMax;
 	
-	protected double currentOccupation;
+	protected String currentOccupation;
 	
 	protected ArrayList<String> capabilities;
 	protected ArrayList<Double> levelsOfExpertise;
@@ -21,7 +21,7 @@ public class Robot extends IEntity {
 			ArrayList<Double> partsCosts, double robotworkCost,
 			double usuryLevel, double velocity, double velocityMax,
 			double range, double energyLevel, double energyLevelMax,
-			double currentOccupation, ArrayList<String> capabilities,
+			String currentOccupation, ArrayList<String> capabilities,
 			ArrayList<Double> levelsOfExpertise) {
 		super(name, positionX, positionY, energyConsumption, resourcesCosts,
 				partsCosts, robotworkCost, usuryLevel);
@@ -76,11 +76,11 @@ public class Robot extends IEntity {
 		this.energyLevelMax = energyLevelMax;
 	}
 	
-	public double getCurrentOccupation() {
+	public String getCurrentOccupation() {
 		return currentOccupation;
 	}
 	
-	public void setCurrentOccupation(double currentOccupation) {
+	public void setCurrentOccupation(String currentOccupation) {
 		this.currentOccupation = currentOccupation;
 	}
 	

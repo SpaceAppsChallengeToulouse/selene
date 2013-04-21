@@ -2,6 +2,10 @@ package selene.entity;
 
 import java.util.ArrayList;
 
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.tiled.TiledMap;
+
 public abstract class IEntity {
 	
 	protected String name;
@@ -16,6 +20,13 @@ public abstract class IEntity {
 	protected double robotworkCost;
 	
 	protected double usuryLevel;
+	
+	//Render-related state
+	Image img;
+	float srcX, srcY;
+	float width, height;
+	//end Render-relater
+	
 
 	public IEntity(String name, int positionX, int positionY,
 			double energyConsumption, ArrayList<Double> resourcesCosts,
@@ -96,5 +107,35 @@ public abstract class IEntity {
 		this.usuryLevel = usuryLevel;
 	}
 	
+	//TODO: move these three outside, into a render-dedicated class ?
+	//      (good luck with that and Java's stupid non multiple inheritance)
+	
+	private void drawSubImage(Graphics g, Image img, float x, float y){
+		g.drawImage(img, x, y, x+width, y+height, srcX, srcY, srcX+width, srcY+height);
+	}
+	
+	public void render(Graphics g, TiledMap map, double mapRenderX, double mapRenderY){
+		drawSubImage(g, img,
+				(float)(mapRenderX + positionX * map.getTileWidth() / 2 - positionY * map.getTileWidth() / 2),
+				(float)(mapRenderY + positionX * map.getTileHeight() /2 + positionY * map.getTileHeight() /2 - map.getTileHeight()));
+	}
+
+	String imgName;
+
+	public void setupRender(String imgName, float srcX, float srcY, float width, float height){
+		this.imgName = imgName;
+		this.srcX = srcX;
+		this.srcY = srcY;
+		this.width = width;
+		this.height = height;
+	}
+
+	public String getImageName(){
+		return imgName;
+	}
+
+	public void setImage(Image img){
+		this.img = img;
+	}
 
 }

@@ -21,7 +21,7 @@ public class SlickInterface extends BasicGame{
 	private Image image;
 	private Image conteneurBouton;
 	private TiledMap map;
-	private int renderX = 300, renderY = 200;
+	private int renderX, renderY;
 	private boolean mouseDown = false;
 	private int mouseX;
 	private int mouseY;
@@ -52,36 +52,39 @@ public class SlickInterface extends BasicGame{
 
 	@Override
 	public void render(GameContainer arg0, Graphics arg1) throws SlickException {
-		map.render(renderX, renderY);
-		this.conteneurBouton.draw(120, 470, 600, 210);
-		this.image.draw(144+0*100, 500, 144+1*100,600, 0, 0*128, 128, 1*128);
-		this.image.draw(144+1*100, 500, 144+2*100,600, 0, 1*128, 128, 2*128);
-		this.image.draw(144+2*100, 500, 144+3*100,600, 0, 2*128, 128, 3*128);
-		this.image.draw(144+3*100, 500, 144+4*100,600, 0, 3*128, 128, 4*128);
-		
-		//TODO: GET THIS OUT AS tileCoords -> render coords
-		drawSubImage(arg1, elementsDeJeu, 
-				(float)(bigX=renderX + 1 * map.getTileWidth() / 2 - 1 * map.getTileWidth() / 2),
-				(float)(bigY=renderY + 1 * map.getTileHeight() /2 + 1 * map.getTileHeight() /2 - map.getTileHeight()) ,
-				64, 64, 0, 0);
-		
-		drawSubImage(arg1, elementsDeJeu, 
-				(float)(bigX=renderX + 10 * map.getTileWidth() / 2 - 7 * map.getTileWidth() / 2),
-				(float)(bigY=renderY + 7 * map.getTileHeight() /2 + 10 * map.getTileHeight() /2 - map.getTileHeight()) ,
-				64, 64, 0, 0);
-		drawSubImage(arg1, elementsDeJeu, 
-				(float)(bigX=renderX + 5 * map.getTileWidth() / 2 - 3 * map.getTileWidth() / 2),
-				(float)(bigY=renderY + 3 * map.getTileHeight() /2 + 5 * map.getTileHeight() /2 - map.getTileHeight()) ,
-				64, 64, 0, 0);
-		drawSubImage(arg1, elementsDeJeu, 
-				(float)(bigX=renderX + 1 * map.getTileWidth() / 2 - 6 * map.getTileWidth() / 2),
-				(float)(bigY=renderY + 6 * map.getTileHeight() /2 + 1 * map.getTileHeight() /2 - map.getTileHeight()) ,
-				128, 128, 0, 0);
-		drawSubImage(arg1, elementsDeJeu, 
-				(float)(bigX=renderX + 12 * map.getTileWidth() / 2 - 4 * map.getTileWidth() / 2),
-				(float)(bigY=renderY + 4 * map.getTileHeight() /2 + 12 * map.getTileHeight() /2 - map.getTileHeight()) ,
-				256, 256, 0, 0);
-		//END TODO.
+		engine.render(arg1);
+		this.conteneurBouton.draw(0, 450, 800, 700, 0,0,800,210);
+		for(int i = 0 ; i < 4 ; ++i){
+			this.image.draw(144+(i)*128, 480, 144+(i+1)*128, 608, 0, (i)*128, 128, (i+1)*128);
+		}
+//		this.image.draw(144+0*100, 500, 144+1*100,600, 0, 0*128, 128, 1*128);
+//		this.image.draw(144+1*100, 500, 144+2*100,600, 0, 1*128, 128, 2*128);
+//		this.image.draw(144+2*100, 500, 144+3*100,600, 0, 2*128, 128, 3*128);
+//		this.image.draw(144+3*100, 500, 144+4*100,600, 0, 3*128, 128, 4*128);
+//		
+//		//TODO: GET THIS OUT AS tileCoords -> render coords
+//		drawSubImage(arg1, elementsDeJeu, 
+//				(float)(bigX=renderX + 1 * map.getTileWidth() / 2 - 1 * map.getTileWidth() / 2),
+//				(float)(bigY=renderY + 1 * map.getTileHeight() /2 + 1 * map.getTileHeight() /2 - map.getTileHeight()) ,
+//				64, 64, 0, 0);
+//		
+//		drawSubImage(arg1, elementsDeJeu, 
+//				(float)(bigX=renderX + 10 * map.getTileWidth() / 2 - 7 * map.getTileWidth() / 2),
+//				(float)(bigY=renderY + 7 * map.getTileHeight() /2 + 10 * map.getTileHeight() /2 - map.getTileHeight()) ,
+//				64, 64, 0, 0);
+//		drawSubImage(arg1, elementsDeJeu, 
+//				(float)(bigX=renderX + 5 * map.getTileWidth() / 2 - 3 * map.getTileWidth() / 2),
+//				(float)(bigY=renderY + 3 * map.getTileHeight() /2 + 5 * map.getTileHeight() /2 - map.getTileHeight()) ,
+//				64, 64, 0, 0);
+//		drawSubImage(arg1, elementsDeJeu, 
+//				(float)(bigX=renderX + 1 * map.getTileWidth() / 2 - 6 * map.getTileWidth() / 2),
+//				(float)(bigY=renderY + 6 * map.getTileHeight() /2 + 1 * map.getTileHeight() /2 - map.getTileHeight()) ,
+//				128, 128, 0, 0);
+//		drawSubImage(arg1, elementsDeJeu, 
+//				(float)(bigX=renderX + 12 * map.getTileWidth() / 2 - 4 * map.getTileWidth() / 2),
+//				(float)(bigY=renderY + 4 * map.getTileHeight() /2 + 12 * map.getTileHeight() /2 - map.getTileHeight()) ,
+//				256, 256, 0, 0);
+//		//END TODO.
 	}
 	
 	public void drawSubImage(Graphics g, Image img, float x, float y, float width, float height, float srcX, float srcY){
@@ -95,6 +98,7 @@ public class SlickInterface extends BasicGame{
 			this.conteneurBouton = new Image("gui_data/conteneur_boutons.png");
 			elementsDeJeu = new Image("gui_data/elements.png");
 			this.map = new TiledMap("test_data/map1.tmx");
+			this.engine.init(this.map);
 		} catch (SlickException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -128,6 +132,8 @@ public class SlickInterface extends BasicGame{
 			renderY -= mouseY - input.getAbsoluteMouseY();
 			mouseX = input.getAbsoluteMouseX();
 			mouseY = input.getAbsoluteMouseY();
+			engine.setRenderX(renderX);
+			engine.setRenderY(renderY);
 		} else {
 			if(mouseDown){
 				mouseDown = false;

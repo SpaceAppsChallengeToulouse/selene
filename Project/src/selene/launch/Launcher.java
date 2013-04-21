@@ -1,16 +1,21 @@
 package selene.launch;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 import selene.command.ICommand;
 import selene.engine.GameEngine;
 import selene.engine.IGameEngine;
+import selene.entity.Building;
+import selene.entity.IEntity;
+import selene.entity.Robot;
 import selene.frame.SlickInterface;
 import selene.frame.Splash;
 import selene.test.TileTest;
@@ -30,21 +35,36 @@ public class Launcher {
 		}
 		s.setVisible(false);
 		String sr = " ''Bonjour, Houston. Nous avons atterri.'' \n \n" +
-				"Cette simple phrase, en s'affichant sur vos Žcrans, a dŽclenchŽ un tonnerre d'acclamations.\n" +
-				"Depuis presque six jours, vous suivez le parcours de la navette BIFROST chargŽe \n"+
-				"d'acheminer votre prŽcieuse cargaison vers la Lune. Vous y avez entassŽ tout ce que vous \n"+
-				"avez pu ;  un scanner et une imprimante 3D, un bulldozer et une pelleteuse, un four ˆ \n"+
+				"Cette simple phrase, en s'affichant sur vos ï¿½crans, a dï¿½clenchï¿½ un tonnerre d'acclamations.\n" +
+				"Depuis presque six jours, vous suivez le parcours de la navette BIFROST chargï¿½e \n"+
+				"d'acheminer votre prï¿½cieuse cargaison vers la Lune. Vous y avez entassï¿½ tout ce que vous \n"+
+				"avez pu ;  un scanner et une imprimante 3D, un bulldozer et une pelleteuse, un four ï¿½ \n"+
 				"induction et des panneaux solaires, tout ce dont vous pourriez avoir besoin pour faire surgir  \n"+
-				"des monotones Žtendues lunaires une florissante industrie. Le sas sÕouvre sur lÕextŽrieur, \n"+
-				"libŽrant le passage aux rares occupants de la navette ; DANEEL, l'opŽrateur, HUGIN et \n"+
-				"MUNIN, les explorateurs,  DOC, le rŽparateur, et AM, STRAM, GRAM, les trois ouvriers. \n \n"+
-				"Sept robots, du matŽriel, et un monde ˆ exploiter. ";
+				"des monotones ï¿½tendues lunaires une florissante industrie. Le sas sï¿½ouvre sur lï¿½extï¿½rieur, \n"+
+				"libï¿½rant le passage aux rares occupants de la navette ; DANEEL, l'opï¿½rateur, HUGIN et \n"+
+				"MUNIN, les explorateurs,  DOC, le rï¿½parateur, et AM, STRAM, GRAM, les trois ouvriers. \n \n"+
+				"Sept robots, du matï¿½riel, et un monde ï¿½ exploiter. ";
 		JOptionPane.showMessageDialog(new JFrame(), sr);
 		IGameEngine engine = new GameEngine();
+		IEntity fusee = new Building("Fusee", 10, 10, 0.0, new ArrayList<Double>(), new ArrayList<Double>(), 0.0, 0.0, 1, 1),
+				comm = new Building("comm tower", 10, 9, 0.0, new ArrayList<Double>(), new ArrayList<Double>(), 0.0, 0.0, 1, 1),
+				robot = new Robot("Truck", 8, 10, 0, new ArrayList<Double>(), new ArrayList<Double>(), 10, 0.0, 1.0, 1.1, 500, 1.0, 1.0, new String(), new ArrayList<String>(), new ArrayList<Double>()),
+				robot2 = new Robot("Truck2", 12, 11, 0, new ArrayList<Double>(), new ArrayList<Double>(), 10, 0.0, 1.0, 1.1, 500, 1.0, 1.0, new String(), new ArrayList<String>(), new ArrayList<Double>()),
+				solarPanel = new Building("Solar", 8,12,0.0, new ArrayList<Double>(), new ArrayList<Double>(), 0.0, 0.0, 1, 1);
+		fusee.setupRender("gui_data/elements.png", 0, 0, 64, 64);
+		robot.setupRender("gui_data/elements.png", 0, 64,64, 64);
+		robot2.setupRender("gui_data/elements.png", 0, 64,64, 64);
+		comm.setupRender("gui_data/elements.png", 0, 128,64, 64);
+		solarPanel.setupRender("gui_data/elements.png", 0, 192, 64, 64);
+		
+		engine.addEntity(fusee);
+		engine.addEntity(robot);
+		engine.addEntity(robot2);
+		engine.addEntity(comm);
+		engine.addEntity(solarPanel);
+		
 		SlickInterface slick = new SlickInterface(engine, cmd);
 		AppGameContainer app;
-		//TileTest tiletest = new TileTest();
-		
 
 		try {
 			app = new AppGameContainer(slick);
